@@ -1,15 +1,11 @@
-==========================================================
   Simulating Multilevel-FeedBack-Scheduling-Queue-in-C-
-===========================================================
 
 This application implements Multilevel Feedback Queue in C with two levels:
 Level 1 : Fixed priority preemptive Scheduling
 Level 2 : Round Robin Scheduling
 
 
-===========================================================
                     SYSTEM DETAILS
-===========================================================
 
 1. Fixed priority preemptive Scheduling (Queue 1)
  * Priority 0 is highest priority.
@@ -29,24 +25,22 @@ Suppose Queue 1 is empty and currently process from Queue 2 is being executed. N
 process should be scheduled as Queue 1 has higher priority than Queue 2. Again after Queue 1 becomes empty Queue 2 will resume execution.
 
 
-===========================================================
                       INPUT FORMAT
-===========================================================
 <pid> 
 <arrival_time> 
 <burst_time> 
 <priority>
 
-===========================================================
+
                       OUTPUT FORMAT
-===========================================================
+
 
 <pid Response_Time Finish_Time Waiting_Time >
 
 
-===========================================================
+
                       Sample Input :
-===========================================================
+
 5
 1 0 14 2
 2 7 8 1
@@ -54,9 +48,9 @@ process should be scheduled as Queue 1 has higher priority than Queue 2. Again a
 4 5 7 2
 5 1 5 3
 
-===========================================================
+
                     Sample Output:
-===========================================================
+
 1 0 44 30
 2 0 31 16
 3 0 41 28
